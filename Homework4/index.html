@@ -4,89 +4,661 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/QuattrocentoSans.css">
 	<title>L'ADRESSE restaurant</title>	  	
 </head>
 <body>
 	<div class="row no-gutters">
-		<aside class="col-md-3 d-flex h-100 align-items-center flex-wrap justify-content-center position-fixed text-center">			
+		<aside class="col-md-3 d-flex h-100 align-items-center flex-wrap justify-content-center position-fixed text-center bg-light">			
 			<nav id="navbar" class="navbar d-block">
 			  <a id="link_top" class="navbar-brand mx-auto mb-5" href="">
-			  	<img src="ladresse_logo.svg" alt="">
+			  	<img src="img/icon/ladresse_logo.svg" alt="">
 			  </a>
-			  <nav id="v-pills-tab" role="tablist" aria-orientation="vertical" class="nav nav-pills flex-column">
-			    <a id="link_about" class="nav-link" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
-	   	        <a id="link_menu" class="nav-link" href="#menu" role="tab" aria-controls="menu" aria-selected="false">Menu</a>
-			    <a id="link_photos" class="nav-link" href="#photos" role="tab" aria-controls="photos" aria-selected="false">Photos</a>
-			    <a id="link_news" class="nav-link" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
-			    <a id="link_press" class="nav-link" href="#press" role="tab" aria-controls="press" aria-selected="false">Press</a>			    
-			    <a id="link_join" class="nav-link" href="#join" role="tab" aria-controls="join" aria-selected="false">Join Our Team</a>
-			    <a id="link_reserv" class="nav-link" href="#reservations" role="tab" aria-controls="reservations" aria-selected="false">Reservations</a>
-			    <a id="link_location" class="nav-link" href="#location" role="tab" aria-controls="location" aria-selected="false">Location</a>
+			  <nav id="v-pills-tab" class="nav nav-pills flex-column">
+			    <a id="link_about" class="nav-link p-0" href="#about">About</a>
+	   	        <a id="link_menu" class="nav-link p-0" href="#menu">Menu</a>
+			    <a id="link_photos" class="nav-link p-0" href="#photos">Photos</a>
+			    <a id="link_news" class="nav-link p-0" href="#news">News</a>
+			    <a id="link_press" class="nav-link p-0" href="#press">Press</a>    
+			    <a id="link_join" class="nav-link p-0" href="#join">Join Our Team</a>
+			    <a id="link_reserv" class="nav-link p-0" href="#reservations">Reservations</a>
+			    <a id="link_location" class="nav-link p-0" href="#location"">Location</a>
 			  </nav>
 			</nav>
 			<div class="w-100">				
-				<p class="address d-block mb-0">1065 Ave of the Americas,</p>
-				<p class="address d-block">New York, NY 10018</p>
-				<p class="address d-block">Made by 
+				<p class="d-block mb-0">1065 Ave of the Americas,</p>
+				<p class="d-block">New York, NY 10018</p>
+				<p class="d-block">Made by 
 					<a href="http://digital.neq4.com/" target="_blank" class="made-by">neq4</a>
 				</p>
 			</div>
 			<div>
                   <a href="https://www.instagram.com/ladressenyc/" target="_blank">
-                  	<img src="img/icon-instagram.svg" alt="" class="mx-1">
+                  	<img src="img/icon/icon-instagram.svg" alt="" class="mx-1">
                   </a>
                   <a href="https://www.facebook.com/LADRESSENYC/" target="_blank">
-                  	<img src="img/icon-facebook.svg" alt="" class="mx-1">
+                  	<img src="img/icon/icon-facebook.svg" alt="" class="mx-1">
                   </a>
                   <a href="https://twitter.com/LADRESSENYC" target="_blank">
-                  	<img src="img/icon-twitter.svg" alt="" class="mx-1">
+                  	<img src="img/icon/icon-twitter.svg" alt="" class="mx-1">
                   </a>
             </div>
 		</aside>
-		<div class="col-md-9 offset-md-3">
-			<div data-spy="scroll" data-target="#navbar" data-offset="0" class="position-relative" style="overflow: auto; height: 100vh;">				
-				<div class="content_bg position-absolute m-0 p-0">
-					<img id="bg_top" class="position-fixed" src="img/bg/top.png" alt="">			
-					<img id="bg_about" class="position-fixed" src="img/bg/about.png" alt="">
-					<img id="bg_menu" class="position-fixed" src="img/bg/menu.png" alt="">
-					<img id="bg_news" class="position-fixed" src="img/bg/news.png" alt="">
-					<img id="bg_join" class="position-fixed" src="img/bg/join.png" alt="">
-					</div>
-				<div id="v-pills-tabcontent" class="tab-content position-relative" style="z-index: 20">
-				  <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
-				  <div id="about"></div>
-				  <h5>About</h5>
-				  <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
-				  <div id="menu"></div>
-				  <h5>Menu</h5>
-				  <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
-				  <div id="photos"></div>
-				  <h5>Photos</h5>
-				  <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
-				  <div id="news"></div>
-				  <h5>News</h5>
-				  <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
-				  <div id="press"></div>
-				  <h5>Press</h5>
-				  <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
-				  <div id="join"></div>
-				  <h5>Join Our Team</h5>
-				  <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
-				  <div id="reservations"></div>
-				  <h5>Reservations</h5>
-				  <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
-				  <div id="location"></div>
-				  <h5>Location</h5>
-				  <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
+		<div class="col-md-9 offset-md-3 d-block">
+			<div class="position-relative">			
+				<div class="position-absolute m-0 p-0">
+					<img id="bg_top" class="h-100 w-100 bgimage position-fixed" src="img/bg/top.jpg" alt="">	
+					<img id="bg_about" class="h-100 w-100 bgimage position-fixed" src="img/bg/about.jpg" alt="">
+					<img id="bg_menu" class="h-100 w-100 bgimage position-fixed" src="img/bg/menu.jpg" alt="">
+					<img id="bg_news" class="h-100 w-100 bgimage position-fixed" src="img/bg/news.jpg" alt="">
+					<img id="bg_join" class="h-100 w-100 bgimage position-fixed" src="img/bg/join.jpg" alt="">
+				</div>
+		        <div id="v-pills-tabcontent" data-spy="scroll" data-target="#navbar" data-offset="0" class="position-relative zindex-modal d-block">
+		            <a href="#" class="feedback position-absolute my-1 p-2">
+		                <i class="icon-email d-inline-block mr-1 my-auto">
+		                	<img src="img/icon/icon-email.svg">
+		                </i>
+		                Feedback
+		            </a>                
+		            <section class="d-flex w-100 justify-content-between flex-column position-relative p-5">
+		                <div class="row position-relative no-gutters pl-3 pr-3 pt-3 mb-2">
+		                    <h1 class="top-image-block__name d-block text-white text-uppercase mb-2">
+		                        L’ADRESSE Your home <br>in the city<br>
+		                        <br>
+		                        <div class="d-flex">
+			                        <a href="http://www.opentable.com/restaurant/profile/270946/reserve?rid=270946&amp;restref=270946" class="d-block mr-3">
+			                        	<img src="img/icon/DC_Widget_US_2018.png" height="200" width="200">
+			                        </a> 
+			                        <a href="https://www.yelp.com/reservations/l-adresse-new-york" target="_blank">
+	                					<div class="bg-white rounded px-3 py-4">
+	                						<img src="img/icon/yelp.svg" height="152" width="136">
+	                					</div>
+	                				</a>
+                				</div>
+                				<br>
+		                    </h1>
+		                </div>
+		                <div class="row d-flex position-relative no-gutters pl-3 pr-3 pt-5 mt-4">
+			              <a href="http://ladressenyc.com/#" class="col bg-white pl-3 pr-5 py-4">
+			                  <p class="text-uppercase"><small>March 28, 2018</small></p>
+			                  <p class="text-uppercase mb-3 top-image-block__news-item-title">Easter Sunday at&nbsp;L’ADRESSE</p>
+			                  <div class="h6">
+			                      <p>Hop on over to L’ADRESSE this Easter Sunday and enjoy a fun-filled brunch featuring the best local ingredients of the season!<br><br>Special menu highlights for the Easter holiday include Lamb burger with black olive tapenade mayonnaise, baby spinach, feta and tomato, season’s first Crab Cake Eggs Benedict and Prosciutto Wrapped Asparagus with cream cheese sauce, shaved parmesan and diced herb tomato concasse.<br><br>Add the Brunch Beverage package ($35 for unlimited Bloody Mary’s, Mimosas and Aperol Spritz cocktails) to enhance the enjoyment of the holiday!<br><br>For reservations contact the restaurant directly at info@ladressenyc.com or 212.221.2150</p>      
+			                  </div>				                
+		              		</a>
+		              		<div class="col-md-auto px-4"></div>
+			              <a href="http://ladressenyc.com/#" class="col bg-white pl-3 pr-5 py-4 ml-auto">
+			                  <p class="text-uppercase"><small>November 6, 2017</small></p>
+			                  <p class="text-uppercase mb-3 top-image-block__news-item-title">NEW NAME... SAME QUALITY EXPERIENCE</p>
+			                  <div class="h6">
+			                      <p>As&nbsp;of&nbsp;November&nbsp;6, we&nbsp;are changing our name to&nbsp;L’ADRESSE American Bistro. </p><p>Our new name, L’ADRESSE aptly conveys the restaurant’s concept of being the perfect meeting point. Whether it’s friends meeting at any time of day, businesspeople looking for a tried and true restaurant or tourists looking for a convenient, inviting experience while touring the city. In other words, it is a “second address” or home away from home for guests. Further, we added the term “American Bistro” as it really sums up who we are. We provide contemporary cuisine that is sophisticated but not overly “fancy”, drawing influences from all over the world — Europe (France, Italy, Russia, etc.) and Asia. L’ADRESSE American Bistro provides just the right balance of formality and intimacy in a convivial setting.<br> </p>      
+			                  </div>
+			              </a>
+		                </div>
+		            </section>
+		            <section id="about" class="d-flex m-5 p-3">
+		                <div class="row position-relative no-gutters mb-5 p-3 bg-white">
+		                	<div class="p-5 border border-dark">		                		
+			                    <div class="about-block__title-wrapper">
+			                        <h2 class="about-block__title">About</h2>
+			                    </div>
+			                    <div class="about-block__text-wrapper">
+			                        <p class="about-block__text">
+			                        </p>
+			                        <p class="about-block__text">Providing a fresh approach to Contemporary American cuisine, L’ADRESSE serves up seasonal fare with European touches in the heart of New York City’s Bryant Park. Our name was chosen to convey the restaurant’s welcoming environment, as it truly is «the address» for friends, colleagues and tourists to meet up at any time of day.
+			                        </p>            
+			                        <p></p>
+			                    </div>
+			                    <div class="about-block__bottom clearfix">
+			                        <div class="about-block__right-part">
+			                            <i class="about-block__right-part-icon"></i>
+			                            <p class="about-block__right-part-text"></p>
+			                            <p class="about-block__right-part-text">Over 40 national and international awards for coffee excellence and hospitality
+			                            </p>                
+			                            <p></p>
+			                        </div>
+			                        <div class="about-block__info-box-wrapper">
+			                            <div class="info-box">
+			                                <p>At L’ADRESSE we serve innovative breakfast, brunch, lunch and dinner menus, as well as pâtisserie created on site in the classic French tradition. Our diverse beverage program includes artisanal cocktails, fruit and vegetable blends, spritzers and one-of- a-kind coffee drinks prepared by an award-winning barista team. We hope that our convivial atmosphere and laid-back attitude will make guests feel welcome whether they want to enjoy a single cup of espresso or a complete dining experience.
+			                                </p>            
+			                            </div>
+			                            <div class="about-block__right-part about-block__right-part_response">
+			                                <i class="about-block__right-part-icon">
+			                                	<img src="img/icon/cup.svg">
+			                                </i>
+			                                <p class="about-block__right-part-text"></p>
+			                                <p class="about-block__right-part-text">Over 40 national and international awards for coffee excellence and hospitality</p> 
+			                                <p></p>
+			                            </div>
+			                            <div class="info-box">
+			                                <p></p>
+			                                <p>L’ADRESSE utilizes the latest trends in restaurant design resulting in a warm and welcoming walk-in atmosphere where guests can enjoy the highest quality of service, hospitality and accessible pricing. Our menus reflect this same high standard without compromising creativity. We are one of a handful of restaurants in the U.S. to use the Josper grill, popular throughout Europe, to highlight the flavor of our meats, fish and vegetables.</p>
+			                                <p> L’ADRESSE’s dessert repertoire includes fine patisserie created on site in the classic French tradition in collaboration with world-renowned pastry chefs. From the Chocolate Envy, a decadent chocolate mouse cake with hazelnuts to Smetannyk, a traditional sour cream layer cake to Tiramisu to Cheesecake and more, our menu is inspired by sweet flavors from around the world. We also offer whole cakes available to order in advance for pick up to celebrate those special occasions including birthdays and anniversaries. Please contact us at 
+			                                	<a href="mailto:info@ladressenyc.com"> nfo@ladressenyc.com</a> or reach us by phone at 
+			                                	<a href="tel:+1(212) 221-25105">(212) 221-2510</a> for more information.
+			                                </p>                    
+			                                <p></p>
+			                            </div>
+			                        </div>
+			                    </div>
+		                	</div>
+		                </div>
+		            </section>
+		            <section id="menu" class="d-flex m-5 px-3 pt-3">
+		                <div class="row position-relative no-gutters mb-5 p-3 bg-white">
+		                    <div class="p-5 border border-dark">		                    	
+			                    <div class="menu-block__title-wrapper">
+			                        <h2 class="menu-block__title">Menu</h2>
+			                    </div>
+			                    <div class="menu-block__content">
+			                        <div class="menu-block__col menu-block__col_list">
+			                            <ul class="menu-list">                    
+			                                <li class="menu-list__item menu-list__item_descr">
+			                                    <a href="http://ladressenyc.com/uploads/menu/2/breakfast.pdf" target="_blank" class="menu-list__link">Breakfast</a>
+			                                    <div class="menu-list__descr">
+			                                        Monday — Friday: 7:00am — 10:45am    </div>
+			                                </li>
+			                                <li class="menu-list__item menu-list__item_descr">
+			                                    <a href="http://ladressenyc.com/uploads/menu/3/lunch.pdf" target="_blank" class="menu-list__link">Lunch</a>
+			                                    <div class="menu-list__descr">
+			                                        Monday — Friday: 11:00am — 3:45pm    </div>
+			                                </li>
+			                                <li class="menu-list__item menu-list__item_descr">
+			                                    <a href="http://ladressenyc.com/uploads/menu/9/HH_menu_2018-03.pdf" target="_blank" class="menu-list__link">SOCIAL HOUR</a>
+			                                    <div class="menu-list__descr">
+			                                        Monday — Friday: 4pm — 7pm    </div>
+			                                </li>
+			                                <li class="menu-list__item menu-list__item_descr">
+			                                    <a href="http://ladressenyc.com/uploads/menu/8/brunch.pdf" target="_blank" class="menu-list__link">Brunch</a>
+			                                    <div class="menu-list__descr">
+			                                        Weekend: 9am — 4:45pm    </div>
+			                                </li>
+			                                <li class="menu-list__item menu-list__item_descr">
+			                                    <a href="http://ladressenyc.com/uploads/menu/4/dinner.pdf" target="_blank" class="menu-list__link">Dinner</a>
+			                                    <div class="menu-list__descr">
+			                                        Monday — Thursday: 4pm — 9:45pm <br>Friday: 4pm – 10:45pm<br>Saturday: 5pm – 10:45pm    </div>
+			                                </li>
+			                                <li class="menu-list__item menu-list__item_descr">
+			                                    <a href="http://ladressenyc.com/uploads/menu/6/wine_2018-03.pdf" target="_blank" class="menu-list__link">Wine &amp; Spirits</a>
+			                                    <div class="menu-list__descr">
+			                                            </div>
+			                                </li>
+			                                <li class="menu-list__item menu-list__item_descr">
+			                                    <a href="http://ladressenyc.com/uploads/menu/7/desserts_2018-03.pdf" target="_blank" class="menu-list__link">Desserts</a>
+			                                    <div class="menu-list__descr">
+			                                            </div>
+			                                </li>                
+			                            </ul>
+			                        </div>
+			                        <div class="menu-block__col menu-block__col_info">
+			                            <div class="menu-block__info">
+			                                For dietary reasons, if&nbsp;you are concerned about certain ingredients, please consult with our manager or&nbsp;server for a&nbsp;better description.                
+			                            </div>
+			                        </div>
+			                    </div>
+		                    </div>
+		                </div>
+		            </section>
+		            <section id="photos" class="d-flex position-relative h-100 mb-5">
+		            	<div id="carouselExampleControls" class="carousel slide w-100 h-100 position-absolute" data-ride="crossorigin">
+				            <div class="carousel-inner h-100">
+				              <div class="carousel-item active h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/ZsJopIur1_2KeBd5MEHCzGXWVAEsLIw1.jpg" alt="1 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/I4kB-SEykQiSZ-aHnfcvKnGtbNdV9R4t.jpg" alt="2 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/-kA5HHSc2olx5-OjmKhi5ltEneXfqb03.jpg" alt="3 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/UAQA4FwgnOFZ5FDwZ-HFjpmrCnbfDiNF.jpg" alt="4 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/6IXZhLcUpxvFatNkhuiEbCc20hcKdrL_.jpg" alt="5 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/j37QO3SKOzPSX7Qt8ipfiGlA6J1lCC-6.jpg" alt="6 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/wAN4mDDfz034JzjWxkwdIsLR6Nm_mzMR.jpg" alt="7 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/X-_1KrtmauR4A_J9r-VtCUKffuB_5NhC.jpg" alt="8 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/c4BAJYIL5MQqEPwuj1jZboHKDCLxeVWN.jpg" alt="9 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/KCBE-CwxfMkmQ21Y-RkUcGK5DfHz1igQ.jpg" alt="10 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/RYyEBij0oUAjHxrFimaKVwRe976Tmrta.jpg" alt="11 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/qKdWKsWkaUVJ3qizypNjV2zaTBBaAuTs.jpg" alt="12 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/CMv1RroMdrBu58PmFgEjt0NLexd8t_5q.jpg" alt="13 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/psqGLRXGESvGKwM_0yqBnd2G1w_3Gp6_.jpg" alt="14 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/ANXRqdXt4y3WbgUECpFKXlE1M7zZ9WgD.jpg" alt="15 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/-QJ7a0FRjz2PN_WI0exvGdvGStdmFCUv.jpg" alt="16 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/xlan09ToJsB92VLfy952s03glHM_XtfN.jpg" alt="17 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/fHqIpaHNTA87sJy3IXU02zN0PGOX3o_S.jpg" alt="18 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/WmVIwyccZEsyG0j7CFqTGJENAHX_eZhY.jpg" alt="19 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/FHv0HY2pDjvQK7vKJ-HdDvyFjhR-oKVv.jpg" alt="20 slide">
+				              </div>
+				              <div class="carousel-item h-100">
+				                <img class="d-block w-100 h-100 img-fluid" src="img/gallery/LEx4GlP6i5OjZ1jscuRYccYTBwez88Ah.jpg" alt="21 slide">
+				              </div>
+				            </div>
+				            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				              <span class="sr-only">Previous</span>
+				            </a>
+				            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				              <span class="sr-only">Next</span>
+				            </a>
+				        </div>
+		            </section>
+		            <section id="news" class="d-flex m-5 px-3 pt-3">
+		                <div class="row position-relative no-gutters mb-5 p-3 bg-white">
+		                	<div class="p-5 border border-dark">
+			                    <div class="news-block__title-wrapper">
+			                        <h2 class="news-block__title">News</h2>
+			                    </div>
+			                    <div class="news-block__content">
+			                        <div class="news-list">
+			                            
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">March 28, 2018</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_35">Easter Sunday at&nbsp;L’ADRESSE</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    <p>Hop on over to L’ADRESSE this Easter Sunday and enjoy a fun-filled brunch featuring the best local ingredients of the season!<br><br>Special menu highlights for the Easter holiday include Lamb burger with black olive tapenade mayonnaise, baby spinach, feta and tomato, season’s first Crab Cake Eggs Benedict and Prosciutto Wrapped Asparagus with cream cheese sauce, shaved parmesan and diced herb tomato concasse.<br><br>Add the Brunch Beverage package ($35 for unlimited Bloody Mary’s, Mimosas and Aperol Spritz cocktails) to enhance the enjoyment of the holiday!<br><br>For reservations contact the restaurant directly at info@ladressenyc.com or 212.221.2150</p>    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">November 6, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_29">NEW NAME... SAME QUALITY EXPERIENCE</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    <p>As&nbsp;of&nbsp;November&nbsp;6, we&nbsp;are changing our name to&nbsp;L’ADRESSE American Bistro. </p>
+			                                    <p>Our new name, L’ADRESSE aptly conveys the restaurant’s concept of being the perfect meeting point. Whether it’s friends meeting at any time of day, businesspeople looking for a tried and true restaurant or tourists looking for a convenient, inviting experience while touring the city. In other words, it is a “second address” or home away from home for guests. Further, we added the term “American Bistro” as it really sums up who we are. We provide contemporary cuisine that is sophisticated but not overly “fancy”, drawing influences from all over the world — Europe (France, Italy, Russia, etc.) and Asia. L’ADRESSE American Bistro provides just the right balance of formality and intimacy in a convivial setting.<br> </p>    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date"></p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_34">Celebrate Saint Patrick’s Day at&nbsp;L’ADRESSE!</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    <p>We’ve got some festive dishes available until Sunday. </p> 
+			                                    <p>Specials will include:Matcha French Toast,Green Pizza Frittata (spinach, asparagus, Gruyere, pine nuts, arugula pesto) and "LE SAINT“ (beef burger, crispy Brussels sprouts, corned beef, cheddar, bourbon glaze — served on a brioche bun with French fries), all accompanied by Green Montauk IPA Brew if you so desire. </p> 
+			                                    <p>Then to “top it all off”, indulge in our decadent "Top Hat"dessert special — a moist fudge cake filled with Mocha-flavored Mousse and a Jameson Whiskey-infused cream (this one is for adults only). </p>    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date"></p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_33">President’s Day Working Hours</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    <p>L’ADRESSE American Bistro will be&nbsp;open Monday, February 19&nbsp;and providing Brunch and Drink Specials all day from 9&nbsp;am to&nbsp;5&nbsp;pm. </p> 
+			                                    <p>Dinner Specials will follow from 5&nbsp;pm until 10&nbsp;pm. </p>    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">February 5, 2018</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_32">Roses are red, Violets are blue,  <br>L'ADDRESSE has a great dinner planned for you!</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    <p>Valentine’s Day Reservations are still available for you and your special someone... so&nbsp;book today! </p><br><p>Our special Prix Fixe Menu includes: </p> <br>
+			                                    <p>A&nbsp;complimentary Cranberry Mimosa </p><br> 
+			                                    <p><strong><u> </u></strong> </p> 
+			                                    <p><u>Amuse bouche</u><u>:</u> </p> 
+			                                    <p>Fennel veloute «Clam Chowder» </p> <br>
+			                                    <p><u></u> </p> 
+			                                    <p><u>1st Course</u><u>:</u> </p> 
+			                                    <p>Trout Crudo&nbsp;— Yuzu-soy vinaigrette, smoked trout caviar, spectrum mix </p> 
+			                                    <p>Or </p> 
+			                                    <p>Burrata&nbsp;— Tomato marmalade, Roasted beets, Candied bacon </p> <br>
+			                                    <p><u></u> </p> 
+			                                    <p><u>2nd Course</u><u>:</u> </p> 
+			                                    <p>Pan Seared Salmon&nbsp;— Fricassée of&nbsp;mushrooms, salmon skin chicharron </p> 
+			                                    <p>Or </p> 
+			                                    <p>Duck rag<strong>ù</strong><strong>&nbsp;— </strong>Duck confit, tomato based sauce, parmigiano-reggiano<strong></strong> </p><br> 
+			                                    <p><u></u> </p> 
+			                                    <p><u>Dessert</u><u>:</u> </p> 
+			                                    <p>Love me, Love me&nbsp;not&nbsp;— Flavors of&nbsp;strawberry mousse and raspberries </p> <br>
+			                                    <p>$72 per person (plus tax and gratuity) also includes 2&nbsp;<strong>complimentary VIP skating passes </strong>at&nbsp;nearby Bryant Park! </p>    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">December 21, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_31">Holidays Dates and Hours</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    <p><strong>December 23rd (Sat)</strong><br>Brunch 9am-4:30pm, <br>Dinner 5:30pm - 11pm (10:30 last call).<br>Please note that from 4:30 pm till 5:30 pm only drinks, desserts are available. </p> 
+			                                    <p><strong><br>December 24th (Sun)</strong><br>Brunch Only 9am-5pm </p> 
+			                                    <p><strong><br>December 25th</strong><br>CLOSED </p> 
+			                                    <p><strong><br>December 26th-30th</strong><br>Brunch 9am-4:30pm, <br>Dinner 5:30pm - 11pm (10:30 last call).<br>Please note that from 4:30 pm till 5:30 pm only drinks, desserts are available. </p> 
+			                                    <p><br><strong>December 31st</strong><br>Brunch 9am-5pm </p> 
+			                                    <p><strong><br>January 1st</strong><br>Brunch 12pm-7pm </p> 
+			                                    <p><strong><br>January 2nd,</strong><br>Brunch 9am-4:30pm, <br>Dinner 5:30pm - 11pm (10:30 last call).<br>Please note that from 4:30 pm till 5:30 pm only drinks, desserts are available. </p> 
+			                                    <p><strong><br>January 4th</strong><br>Back to Regular service 7:30-10pm </p>    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">November 9, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_30">Celebrate Thanksgiving at&nbsp;L’ADRESSE American Bistro</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    Join&nbsp;us with family and friends for a&nbsp;lavish Thanksgiving feast from noon to&nbsp;8&nbsp;p.m. Chef Lee and his team have put together an&nbsp;elegant four-course prix fixe menu with all the traditional holiday favorites (and some with a&nbsp;twist). The meal closes with a&nbsp;choice of&nbsp;dessert and optional evening stroll in&nbsp;neighboring Bryant Park!    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">October 29, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_28">We will be closed for a&nbsp;private function from 2&nbsp;pm onwards this Sunday, October 29th</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    We will re-open for business on Monday, October 30th at 7:30 am.    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">October 9, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_25">Make Mondays Fun Days!</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    <p>Why limit Happy to&nbsp;an&nbsp;hour? </p><br>
+			                                    <p>Stop in&nbsp;and enjoy extended Happy Hour specials on&nbsp;select drinks and bar bites every Monday from 4-10&nbsp;pm. </p><br>
+			                                    <p>Cheers to&nbsp;starting the week off right! </p>    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">October 9, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_26">Tricks or&nbsp;Treats at&nbsp;Coffeemania?<br>The Choice is&nbsp;yours!</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    <p>Our <strong>Dark Soul </strong>was designed to&nbsp;wake the Dead, with black sesame &amp;&nbsp;dark chocolate sauce, espresso and whole milk. </p>
+			                                    <p>Or, trick a&nbsp;friend by&nbsp;ordering them a&nbsp;<strong>Watching You</strong> cocktail..... a&nbsp;delicious concoction of&nbsp;Sailor Jerry Spiced Rum, spicy pumpkin syrup, lime juice and Fever Tree Ginger Beer&nbsp;— the “eye” is&nbsp;edible too! </p>    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">September 12, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_23">Support The American Red Cross</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    For every burger sold at&nbsp;Coffeemania during lunch, brunch and dinner service, the restaurant will donate $2&nbsp;to&nbsp;The American Red Cross to&nbsp;help those affected by&nbsp;Hurricanes Harvey and Irma.<br><br>All customers who order a&nbsp;burger at&nbsp;Coffeemania or&nbsp;make a&nbsp;separate donation online will be&nbsp;entered to&nbsp;win two tickets to&nbsp;see one of&nbsp;Broadway shows.    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">September 11, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_24">Delivery via Uber Eats</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    Coffeemania is&nbsp;now pleased to&nbsp;offer delivery on&nbsp;select menu items via Uber Eats.<br><br>Please, check the link in the news.    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">August 28, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_21">Game, Set, Match!</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    <p>Celebrate the U.&nbsp;S.&nbsp;Open at&nbsp;Coffeemania<br> Aug 28&nbsp;— Sept 10</p> 
+			                                    <p>&nbsp;</p> 
+			                                    <p>Grand Slam cocktail<br> A&nbsp;Long Island winner made with Sailor Jerry Spiced Rum, Tequila, Stoli Vodka, Tanqueray Gin, Cointreau &amp;&nbsp;Amaretto </p> 
+			                                    <p>&nbsp;</p> 
+			                                    <p>Top Spin patisserie<br> Lemongrass &amp;&nbsp;White Chocolate Mousse dessert with Apple Yuzu Jelly &amp;&nbsp;Lemon Raspberry Biscuit center</p>    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">July 24, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_19">OpenTable blog</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    “...a meal here at&nbsp;this first U.&nbsp;S. outpost of&nbsp;this popular Russian restaurant deserves to&nbsp;be&nbsp;followed by&nbsp;a&nbsp;cup of&nbsp;joe and one of&nbsp;several summer desserts to&nbsp;fall in&nbsp;love with—especially the light and refreshing Love Me, Love Me&nbsp;Not”   
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">June 6, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_20">Where IN New York</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    “I&nbsp;was delighted to&nbsp;find that the sleek, airy space across from Bryant Park in&nbsp;Midtown was a&nbsp;full-service French, Asian and Russian-influenced spot with a&nbsp;menu of&nbsp;wide-ranging dishes.”    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">May 22, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_13">Here’s something new to&nbsp;Cheers about at&nbsp;Coffeemania</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    Enjoy unlimited Brunch cocktails for $35 with the order of any Brunch entree.  <br>Choose from our Brunch cocktail menu which includes a freshly pureed Bloody Mary, a thirst-quenching Aperol Spritz and a bubbly Mimosa made with fresh-squeezed orange juice — the choice is yours — for 1 1/2 hours during Coffeemania’s Brunch service, every Saturday and Sunday, 9 a.m. — 4 p.m.    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">May 19, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_14">Cadillac Magazine</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    Talk about fusion cuisine: Coffeemania, Moscow’s wildly popular restaurant group, uses Japanese and Italian methods and standards, showcases a uniquely Spanish way of wood-fired cooking, adds a lengthy array of Paris-worthy patisserie sweets and a barista-focused coffee culture, and hangs all this on a framework of Russian heritage. It’s a menu that is easier to enjoy than to describe, because the one thing all the dishes at the first Coffeemania outpost in the U.S. have in common is that they are delicious.    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">April 20, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_10">Complimentary Aperol Spritz</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    Beat those Rainy Day Blues today — and any day it rains during the month of April — by enjoying a complimentary Aperol Spritz at the restaurant!    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <p class="news-list__item-date">March 16, 2017</p>
+			                                <p class="news-list__item-name">
+			                                    <a href="http://ladressenyc.com/#" class="news-list__item-link js-news-popup-open" data-href="#news-popup_9">Breakfast is&nbsp;Served!</a>
+			                                </p>
+			                                <div class="news-list__item-desc">
+			                                    Our breakfast menu is just as fresh and creative as our lunch and dinner menus so we are excited to offer a new morning option in the Bryant Park neighborhood.    
+			                                </div>
+			                            </div>
+
+			                            <div class="news-list__item">
+			                                <form class="js-form-subscribe" novalidate="novalidate">
+			                                    <input type="hidden" name="_csrf" value="NkVIa1FCVjdGcD85Hm8QA0QAeh8CcG5uXH0kUgVwY2FXHxAuHRQSYQ==">                        
+			                                    <div class="form__input-holder form__input-holder_subscribe">
+			                                        <div class="form__input-holder js-form-input-holder">
+			                                            <input class="form__input js-form-input" type="email" name="subscribe">
+			                                            <span class="form__input-placeholder">Email</span>
+			                                        </div>
+			                                        <div class="form__submit-holder">
+			                                            <button type="submit" class="form__submit">SUBSCRIBE</button>
+			                                        </div>
+			                                    </div>
+			                                    <div class="form__descr">
+			                                        Keep in touch! Subscribe to our Newsletter to get
+			                                        <br>
+			                                        the latest news about our events and more.
+			                                    </div>
+			                                </form>
+			                            </div>
+			                        </div>
+			                    </div>
+		                	</div>	
+		                </div>
+		            </section>
+		            <section id="press" class="d-flex m-5 px-3 pt-3">
+		                <div class="row position-relative no-gutters mb-5 p-3 bg-white">
+		                	<div class="p-5 border border-dark">
+			                    <div class="press-block__title-wrapper">
+			                        <h2 class="press-block__title">Press</h2>
+			                    </div>
+			                    <div id="press-pjax" data-pjax-container="" data-pjax-timeout="10000">
+			                        <div class="press-block__list">
+			                            <div class="press-block__left">            
+			                                <a href="http://www.travelandleisure.com/food-drink/restaurants/nyc-coffeemania-restaurant-name-change" target="_blank" class="press-block__item">
+			                                    <div class="press-block__item-photo">
+			                                        <img class="press-block__item-photo-img" src="img/travel.jpg">
+			                                    </div>
+			                                    <div class="press-block__item-text">
+			                                        <p class="press-block__item-title">The food speaks for itself</p>
+			                                        <p class="press-block__item-date">November 8, 2017</p>
+			                                    </div>
+			                                </a>
+			                                <a href="http://blog.opentable.com/2017/sweet-beats-the-heat-the-ultimate-summer-desserts/" target="_blank" class="press-block__item press-block__item_small press-block__item_text">
+			                                    <div class="press-block__item-text">
+			                                        <p class="press-block__item-title">OpenTable blog</p>
+			                                        <p class="press-block__item-date">July 24, 2017</p>
+			                                    </div>
+			                                    <div class="press-block__item-desc">Sweet Beats the Heat: The Ultimate Summer Desserts
+			                                    </div>
+			                                </a>
+			                            </div>
+			                            <div class="press-block__right">
+			                                <a href="https://gotham-magazine.com/coffeemania-is-more-than-coffee-scandinavian-food-comes-to-brooklyn-with-norman" target="_blank" class="press-block__item press-block__item_small press-block__item_text">
+			                                    <div class="press-block__item-text">
+			                                        <p class="press-block__item-title">Gotham</p>
+			                                        <p class="press-block__item-date">April 18, 2017</p>
+			                                    </div>
+			                                    <div class="press-block__item-desc">Coffeemania Is&nbsp;Much More Than Its Name Indicates
+			                                    </div>
+			                                </a>
+			                            </div>
+			                        </div>
+			                        <div class="press-block__more">
+			                            <a id="load-more" href="http://ladressenyc.com/site/load-more-press?offset=3" class="press-block__more-button" style="text-align: center; text-decoration: none;">Load more
+			                            </a>
+			                        </div>
+			                    </div>    
+		                	</div>
+		                </div>
+		            </section>
+		            <section id="join" class="d-flex m-5 px-3 pt-3">
+		                <div class="row position-relative no-gutters mb-5 p-3 bg-white">
+		                	<div class="p-5 border border-dark">
+			                    <div class="join-block__title-wrapper">
+			                        <h2 class="join-block__title">Join Our Team</h2>
+			                    </div>
+			                    <div class="join-block__text-wrapper">
+			                        <p class="join-block__text">We are always looking for talented individuals who want to share our passion for creating amazing leisurely dining experiences for our guests. Since we believe that our success is based on professional teamwork, we provide strong educational opportunities for our employees.</p>            
+			                        <p class="join-block__column-text">We invite all dedicated and talented hospitality professionals to join us. We seek candidates who are energetic, enthusiastic, find enjoyment in learning and, most importantly, are passionate about food and hospitality!</p>
+			                        <p class="join-block__column-text">We are currently hiring all kitchen and service positions, including but not limited to:</p>
+			                        <ul class="join-block__column-list">
+			                        	<li class="join-block__column-item">Cooks of All Levels</li>
+			                        	<li class="join-block__column-item">Pastry &amp; Confectionery Chefs</li>
+			                        	<li class="join-block__column-item">Servers</li>
+			                        	<li class="join-block__column-item">Server Assistants</li>
+			                        	<li class="join-block__column-item">Host/ Maitre D’</li>
+			                        	<li class="join-block__column-item">Lead Baristas</li>
+			                        	<li class="join-block__column-item">Baristas</li>
+			                        	<li class="join-block__column-item">Beverage Specialists</li>
+			                        	<li class="join-block__column-item">Dishwashers</li>
+			                        	<li class="join-block__column-item">Freshly Graduated Culinary Students are Always Welcome!</li>
+			                        </ul>        
+			                    </div>
+			                    <p class="join-block__column-text"><strong>We offer competitive pay and abundant growth opportunities!</strong>
+			                    </p>
+			                    <p class="join-block__column-text">Please send your resume to: 
+			                    	<a href="mailto:info@ladressenyc.com">info@ladressenyc.com</a> or reach us by phone at 
+			                    	<a href="tel:+1(212)22125105">(212) 221-2510</a>
+			                    </p>    
+		                	</div>
+		                </div>
+		            </section>
+		            <section id="reservations" class="d-flex m-5 px-3 pt-3">
+		            	<div class="row position-relative no-gutters mb-5 p-3 bg-white">
+			              	<div class="p-5 border border-dark">
+				                <div class="reservation__title-wrapper">
+				                  <h2 class="reservation__title">Reservations</h2>
+				                </div>
+				                <div class="reservation__form">
+				                  <div class="reservation__form-content">
+				                    <div id="ot-widget-container0">
+				                    	<img src="img/reservation.png" alt="">
+				                    </div>
+				                </div>
+				                  <div class="reservation__form-text">
+				                    <div class="reservation__work-hours">
+				                        <p class="location__hours-title">OPENING HOURS</p>
+				                        <p>Monday — Thursday: 7:00am — 10pm<br></p>
+				                        <p>Friday: 7:00am — 11pm</p>
+				                        <p>Saturday: 9am — 11pm</p>
+				                        <p>Sunday: 9am — 5pm<br></p>        
+				                    </div>
+				                    <div class="reservation__work-hours">
+				                    </div>
+				                  </div>
+				                </div>
+			                </div>
+		            	</div>
+		            </section>
+		            <section id="location" class="location">
+		                <section class="location__map-section">
+							<div class="d-flex position-relative h-100">
+								<img class="d-block w-100 h-100 img-fluid" src="img/map.jpg" alt="">
+							</div>
+		                </section>
+		            </section>		            
 				</div>
 			</div>
 		</div>
 	</div>
 	<script src="js/jquery-latest.min.js"></script>
-	<script type="text/javascript" src="js/bgchange.js"></script>		
+
+	<script type="text/javascript" src="js/bgchange.js"></script>	
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
