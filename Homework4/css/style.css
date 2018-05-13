@@ -26,6 +26,10 @@ section {
 aside {
 	z-index: 20;
 }
+.title {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
 .nav-link{	 
 	 font-size: 18px;
 	 line-height: 36px;
@@ -40,28 +44,3 @@ aside {
 	overflow: auto; 
 	height: 100vh;
 }
-.feedback {
-  top: 80px;
-  right: 0;
-  background-color: #980933;
-  color: #ffffff;  
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.13;  
-}
-.top-image-block__name {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  font-size: 68px;
-  letter-spacing: 2px;
-  line-height: 81px;
-}
-.top-image-block__news-item-title {
-  color: #111;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  letter-spacing: 0.5px;
-  line-height: 35px;
-}
-
