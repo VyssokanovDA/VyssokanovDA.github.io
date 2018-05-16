@@ -5,7 +5,7 @@ const products = [
     category: 'Категория 1',
     color: 'Цвет 1',
     parameter: 'Параметр 1',
-    img: 'product.jpg',
+    img: 'product1.jpg',
   },
   {
     name: 'Название 2',
@@ -13,7 +13,7 @@ const products = [
     category: 'Категория 1',
     color: 'Цвет 2',
     parameter: 'Параметр 2',
-    img: 'product.jpg',
+    img: 'product2.jpg',
   },
   {
     name: 'Название 3',
@@ -21,7 +21,7 @@ const products = [
     category: 'Категория 1',
     color: 'Цвет 3',
     parameter: 'Параметр 3',
-    img: 'product.jpg',
+    img: 'product3.jpg',
   },
   {
     name: 'Название 4',
@@ -29,7 +29,7 @@ const products = [
     category: 'Категория 2',
     color: 'Цвет 1',
     parameter: 'Параметр 4',
-    img: 'product.jpg',
+    img: 'product4.jpg',
   },
   {
     name: 'Название 5',
@@ -37,7 +37,7 @@ const products = [
     category: 'Категория 2',
     color: 'Цвет 2',
     parameter: 'Параметр 1',
-    img: 'product.jpg',
+    img: 'product5.jpg',
   },
   {
     name: 'Название 6',
@@ -45,7 +45,7 @@ const products = [
     category: 'Категория 2',
     color: 'Цвет 2',
     parameter: 'Параметр 2',
-    img: 'product.jpg',
+    img: 'product6.jpg',
   },
   {
     name: 'Название 7',
@@ -53,7 +53,7 @@ const products = [
     category: 'Категория 2',
     color: 'Цвет 2',
     parameter: 'Параметр 3',
-    img: 'product.jpg',
+    img: 'product7.jpg',
   },
   {
     name: 'Название 8',
@@ -61,6 +61,6 @@ const products = [
     category: 'Категория 2',
     color: 'Цвет 1',
     parameter: 'Параметр 1',
-    img: 'product.jpg',
+    img: 'product8.jpg',
   }
 ];

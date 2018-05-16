@@ -76,17 +76,14 @@ for(var i=0; i<arr.length; i++){
 }
 
 function createProducts(products){
-	var product = document.getElementsByClassName('products');
-	//console.log(product);
+	var product = document.getElementsByClassName('products');	
 	product[0].innerHTML = '';
-
 	for(var i=0; i<products.length; i++){
 		var item = document.createElement('div');
 		item.className = 'col-md-4 product';
 		var img = document.createElement('img');
 		img.className = 'product-image';
-		img.src = './public/img/product.jpg';
-
+		img.src = './public/img/' + String(products[i].img);
 		var name = document.createElement('div');
 		var elType = document.createElement('div');
 		var elCategory = document.createElement('div');
@@ -103,7 +100,6 @@ function createProducts(products){
 		item.appendChild(elCategory);
 		item.appendChild(elColor);
 		item.appendChild(elParameter);
-
 		product[0].appendChild(item);
 	}
 }
@@ -116,22 +112,27 @@ var elColor = document.getElementsByClassName('color');
 var color = elColor[0];
 var elParameter = document.getElementsByClassName('parameter');
 var parameter = elParameter[0];
+//массив элементов, предназначенных для выбора параметров
 var arrProduct = [type, category, color, parameter];
-var targ = new Array('', '', '', '');
-
+//перебор элементов для запуска метода addEventListener
 arrProduct.forEach(function(arritem, index, arr) {	
 	arritem.addEventListener('change', function(e){		
-		targ[index] = e.target.value;
-		console.log(targ[index]);		
-		if(e.target.value == ''){
-			createProducts(products);
-		}else{
-			var newProducts = products.filter(function(item){
-				return (item.type == targ[0]) && (item.category == targ[1]) && (item.color == targ[2]) && (item.parameter == targ[3]);
-			})			
-			createProducts(newProducts);
-		}
+		//Восстановление массива newProducts
+		var newProducts = products;		
+		//перебор элементов для последовательной фильтрации
+		arrProduct.forEach(function(arritem1, index1, arr1) {
+			//приводим элементы color и parameter к общему виду (для определения у них свойства value)
+			arritem1 = (arritem1.className == 'color') ? arritem1.querySelector(':checked') : arritem1;
+			arritem1 = (arritem1.className == 'parameter') ? arritem1.querySelector(':checked') : arritem1;
+			//проверка, выбрано ли "Все"
+			if (arritem1.value != '') {
+				//Если не все, то фильтр
+				newProducts = newProducts.filter(function(item){
+					return (item[Object.keys(newProducts[0])[index1 + 1]] == arritem1.value);
+				})					
+			}	
+		})
+		//вызов функции, выводящей на экран продукты
+		createProducts(newProducts);
 	})
 })
-
-
