@@ -1,0 +1,19 @@
+Index: Homework8/public/js/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Homework8/public/js/index.js	(revision 864e73ea7af24eded389d2341870374570b4e651)
++++ Homework8/public/js/index.js	(date 1526588294174)
+@@ -6,9 +6,9 @@
+ 
+ 	$(products).each(function(index, item){		
+ 		if (elType.children().is(function(i, element){
+-				console.log(element.value);
++				/*console.log(element.value);
+ 				console.log(item.type);
+-				console.log(this);			
++				console.log(this);			*/
+ 				return element.value != item.type;	
+ 				
+ 			})){

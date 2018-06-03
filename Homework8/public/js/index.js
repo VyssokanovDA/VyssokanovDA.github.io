@@ -1,155 +1,65 @@
 $(document).ready(function(){
 	var elType = $('#type');
 	var elCategory = $('#category');
-	var elColor = $('#color');
-	var elParameter = $('#parameter');	
+	var elColor = $('.color');
+	var elParameter = $('.parameter');
+	var arrType = [];
+	var arrCategory = [];
+	var arrColor = [];
+	var arrParameter = [];
 
 	$(products).each(function(index, item){		
-		if (elType.children().is(function(i, element){
-				console.log(element.value);
-				console.log(item.type);
-				console.log(this);			
-				return element.value != item.type;	
-				
-			})){
-			console.log(456);
-			elType.append("<option>" + item.type + "</option>");			
-		}else{
-			
-		}		
-	});
+		if (!($.inArray(item.type, arrType) + 1)){
+		    arrType.push(item.type);
+		    elType.append("<option>" + item.type + "</option>");
+        }
+        if (!($.inArray(item.category, arrCategory) + 1)){
+            arrCategory.push(item.category);
+            elCategory.append("<option>" + item.category + "</option>");
+        }
+        if (!($.inArray(item.color, arrColor) + 1)){
+            arrColor.push(item.color);
+            elColor.children().first().append("<br><label><input type=\"radio\" name=\"color\" value=\"" + item.color + "\">" + item.color + "</label></div>");
+        }
+        if (!($.inArray(item.parameter, arrParameter) + 1)){
+            arrParameter.push(item.parameter);
+            elParameter.children().first().append("<br><label><input type=\"radio\" name=\"parameter\" value=\"" + item.parameter + "\">" + item.parameter + "</label></div>");
+        }
+    });	
 
-	/*var arr = [];
-	products.forEach(function(item){
-		//Проверка на нахождении элемента в массиве
-		if(!arr.includes(item["type"]))
-			//Добавление в массив
-		arr.push(item["type"]);
-	})
-
-	for(var i=0; i<arr.length; i++){
-		var option = document.createElement('option');
-		option.text = arr[i];
-		elType.appendChild(option);
-	}
-
-	var arr = [];
-	products.forEach(function(item){
-		//Проверка на нахождении элемента в массиве
-		if(!arr.includes(item["category"]))
-			//Добавление в массив
-		arr.push(item["category"]);
-	})
-
-	for(var i=0; i<arr.length; i++){
-		var option = document.createElement('option');
-		option.text = arr[i];
-		elCategory.appendChild(option);
-	}
-
-	var arr = [];
-	products.forEach(function(item){
-		//Проверка на нахождении элемента в массиве
-		if(!arr.includes(item["color"]))
-			//Добавление в массив
-		arr.push(item["color"]);
-	})
-
-	for(var i=0; i<arr.length; i++){
-		var label = document.createElement('label');
-		var input = document.createElement('input');
-		var br = document.createElement('br');
-		input.type = "radio";
-		input.name = "color";
-		input.value = arr[i];
-		input.checked = 0;
-		label.textContent = arr[i];	
-		elColor[0].firstElementChild.appendChild(br);
-		elColor[0].firstElementChild.appendChild(label);	
-		label.insertBefore(input, label.firstChild);	
-	}
-
-	var arr = [];
-	products.forEach(function(item){
-		//Проверка на нахождении элемента в массиве
-		if(!arr.includes(item["parameter"]))
-			//Добавление в массив
-		arr.push(item["parameter"]);
-	})
-
-	for(var i=0; i<arr.length; i++){
-		var label = document.createElement('label');
-		var input = document.createElement('input');
-		var br = document.createElement('br');
-		input.type = "radio";
-		input.name = "parameter";
-		input.value = arr[i];
-		input.checked = 0;
-		label.textContent = arr[i];	
-		elParameter[0].firstElementChild.appendChild(br);
-		elParameter[0].firstElementChild.appendChild(label);	
-		label.insertBefore(input, label.firstChild);	
-	}
-
-	function createProducts(products){
-		var product = document.getElementsByClassName('products');	
-		product[0].innerHTML = '';
-		for(var i=0; i<products.length; i++){
-			var item = document.createElement('div');
-			item.className = 'col-md-4 product';
-			var img = document.createElement('img');
-			img.className = 'product-image';
-			img.src = './public/img/' + String(products[i].img);
-			var name = document.createElement('div');
-			var elType = document.createElement('div');
-			var elCategory = document.createElement('div');
-			var elColor =  document.createElement('div');
-			var elParameter =  document.createElement('div');
-			name.innerText = products[i].name;
-			elType.innerText = products[i].type;
-			elCategory.innerText = products[i].category;
-			elColor.innerText = products[i].color;
-			elParameter.innerText = products[i].parameter;
-			item.appendChild(name);		
-			item.appendChild(img);
-			item.appendChild(elType);
-			item.appendChild(elCategory);
-			item.appendChild(elColor);
-			item.appendChild(elParameter);
-			product[0].appendChild(item);
-		}
-	}
+    function createProducts(products){
+    	var product = $('.products');
+    	product.empty();
+    	$(products).each(function(index, item){
+    		product.append("<div class=\"col-md-4 product\"><div>" + item.name + "</div><img class=\"product-image\" src=\"./public/img/" + item.img + "\"</img><div>" + item.type + "</div><div>" + item.category + "</div><div>" + item.color + "</div><div>" + item.parameter + "</div></div>");
+    	})
+    }
 
 	createProducts(products);
-
-	var type = document.getElementById('type');
-	var category = document.getElementById('category');
-	var elColor = document.getElementsByClassName('color');
-	var color = elColor[0];
-	var elParameter = document.getElementsByClassName('parameter');
-	var parameter = elParameter[0];
+	
 	//массив элементов, предназначенных для выбора параметров
-	var arrProduct = [type, category, color, parameter];
-	//перебор элементов для запуска метода addEventListener
-	arrProduct.forEach(function(arritem, index, arr) {	
-		arritem.addEventListener('change', function(e){		
-			//Восстановление массива newProducts
-			var newProducts = products;		
-			//перебор элементов для последовательной фильтрации
-			arrProduct.forEach(function(arritem1, index1, arr1) {
-				//приводим элементы color и parameter к общему виду (для определения у них свойства value)
-				arritem1 = (arritem1.className == 'color') ? arritem1.querySelector(':checked') : arritem1;
-				arritem1 = (arritem1.className == 'parameter') ? arritem1.querySelector(':checked') : arritem1;
-				//проверка, выбрано ли "Все"
-				if (arritem1.value != '') {
-					//Если не все, то фильтр
-					newProducts = newProducts.filter(function(item){
-						return (item[Object.keys(newProducts[0])[index1 + 1]] == arritem1.value);
-					})					
-				}	
-			})
-			//вызов функции, выводящей на экран продукты
-			createProducts(newProducts);
+	var arrProduct = $("#type, #category, .color:first, .parameter:first");	
+	$(arrProduct).change(function(){		
+		//Восстановление массива newProducts
+		var newProducts = products;		
+		//перебор элементов для последовательной фильтрации
+		$(arrProduct).each(function(index, arritem){
+			//приводим элементы color и parameter к общему виду (для определения у них свойства val)
+			if ($(arritem).hasClass('color')){
+				arritem = $(':checked', arritem);
+			} 
+			if ($(arritem).hasClass('parameter')){
+				arritem = $(':checked', arritem);
+			} 				
+			//проверка, выбрано ли "Все"
+			if ($(arritem).val() != '') {
+				//Если не все, то фильтр
+				newProducts = $(newProducts).filter(function(){
+					return this[Object.keys(newProducts[0])[index + 1]] == $(arritem).val();
+				})					
+			}	
 		})
-	})*/
+		//вызов функции, выводящей на экран продукты
+		createProducts(newProducts);
+	})	
 })
