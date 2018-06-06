@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<section class="todoapp" id="app">
+    <header class="header">
+        <h1>todos</h1>
+        <input class="new-todo"
+               autofocus autocomplete="off"
+               placeholder="What needs to be done?"
+               v-model="inputValue"
+               @keyup.enter="addTodo"
+        >
+    </header>
+    <section class="main">
+        <input class="toggle-all" type="checkbox" >
+        <ul class="todo-list" v-for="todo in todos">
+            <li class="todo">
+                <div class="view">
+                    <input class="toggle" type="checkbox">
+                    <label>{{todo.value}}</label>
+                    <button @click="deleteTodo(todo.id)" class="destroy"></button>
+                </div>
+                <input class="edit" type="text">
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+	    <span class="todo-count">
+	      <strong>remaining</strong>
+	    </span>
+        <ul class="filters">
+            <li><a href="#/all">All</a></li>
+            <li><a href="#/active">Active</a></li>
+            <li><a href="#/completed">Completed</a></li>
+        </ul>
+        <button class="clear-completed">
+            Clear completed
+        </button>
+    </footer>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+<script src="start.js"></script>
+
+</body>
+</html>
