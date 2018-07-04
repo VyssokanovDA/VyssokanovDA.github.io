@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Конфигуратор</title>
+  <!-- Стили -->
+  <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/css/index.css">
+</head>
+
+<body>
+  <div class="container" id="app">
+    <h1>Конфигуратор</h1>
+    <div class="row">
+      <!-- Левая часть -->
+      <div class="col-md-4">
+        <!-- Тип товара -->
+        <h4>Выберите тип товара</h4>
+        <div class="type">
+          <select name="type" id="type" class="form-control" v-model="type">
+            <option value="">Все</option>
+            <option v-for="type in getFeatures('type')">{{type}}</option>
+          </select>
+        </div>
+        <!-- Категория товара -->
+        <h4>Выберите категорию</h4>
+        <div class="category">
+          <select name="category" id="category" class="form-control" v-model="category">
+            <option value="">Все</option>
+            <option v-for="category in getFeatures('category')">{{category}}</option>
+          </select>
+        </div>
+        <!-- Цвет товара -->
+        <h4>Выберите цвет</h4>
+        <div class="color">
+          <div class="radio">
+            <label>
+              <input type="radio" value="" v-model="color">
+              Все
+            </label>
+          </div>
+          <div class="radio" v-for="item in getFeatures('color')">
+            <label>
+              <input :value="item" type="radio" v-model="color">
+              {{item}}
+            </label>
+          </div>
+        </div>
+        <!-- Параметр товара -->
+        <h4>Выберите параметр</h4>
+        <div class="parameter">
+          <div class="radio">
+            <label>
+              <input type="radio" value="" v-model="parameter">
+              Все
+            </label>
+          </div>
+          <div class="radio" v-for="item in getFeatures('parameter')">
+            <label>
+              <input type="radio" :value="item" v-model="parameter">
+              {{item}}
+            </label>
+          </div>
+        </div>
+        <!-- Поиск по люблму параметру -->
+        <div>
+          <h1>Поиск</h1>
+          <input type="text"
+               size="50" 
+               autofocus autocomplete="off"
+               placeholder="Введите значение для поиска"
+               v-model="inputValue"               
+        >
+        </div>
+      </div>
+      <!-- Правая часть -->
+      <div class="col-md-8">        
+        <!-- Товары -->
+        <div class="row products">
+          <div class="col-md-4 product" v-for="product in getProducts">
+            <img class="product-image" :src="product.img"/>
+            <div>{{product.type}}</div>
+            <div>{{product.category}}</div>
+            <div>{{product.color}}</div>
+            <div>{{product.parameter}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Скрипты -->  
+  <script src="./public/js/vue.js"></script>
+  <script src="./public/js/products.js"></script>  
+  <script src="./public/js/main.js"></script>
+</body>
+
+</html>
