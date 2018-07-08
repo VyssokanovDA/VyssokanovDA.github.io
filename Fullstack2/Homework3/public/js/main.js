@@ -38,7 +38,7 @@ new Vue({
 						
 			/*Поиск по любому параметру*/
 			let arr2 = this.products.slice();
-			arr2 = arr2.filter(item => (item.type.toLowerCase().indexOf(this.inputValue.toLowerCase()) + 1) || (item.category.toLowerCase().indexOf(this.inputValue.toLowerCase()) + 1) || (item.color.toLowerCase().indexOf(this.inputValue.toLowerCase()) + 1) || (item.parameter.toLowerCase().indexOf(this.inputValue.toLowerCase()) + 1));
+			arr2 = arr2.filter(item => (item.type.toLowerCase().indexOf(this.inputValue.toLowerCase()) + 1) || (item.category.toLowerCase().indexOf(this.inputValue.toLowerCase()) + 1) || (item.color.toLowerCase().indexOf(this.inputValue.toLowerCase()) + 1) || (item.parameter.toLowerCase().indexOf(this.inputValue.toLowerCase()) + 1)  || (item.name.toLowerCase().indexOf(this.inputValue.toLowerCase()) + 1));
 			return arr2
 		}		
 	}
